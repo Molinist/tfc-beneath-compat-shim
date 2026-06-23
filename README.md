@@ -8,15 +8,18 @@ This mod is intentionally small and does not patch downloaded mod jars on disk. 
 
 - TerraFirmaCraft 4.2.0 early `tfc:salt_water` `DeferredHolder` access during block-state cache baking.
 - TerraFirmaCraft registry holders that are queried during addon registration before their `DeferredHolder` is bound.
-- Beneath code compiled against the older `RockSpikeBlock(Properties)` constructor by adding that constructor at runtime only.
-- Beneath worldgen configured feature data that references the removed `tfc:geode` feature type.
+- Beneath `2.0.1` for NeoForge 1.21.1, specifically the jar named `Beneath-NeoForge-1.21.1-2.0.1.jar`.
+- The Beneath `2.0.1` `NoSuchMethodError` for `RockSpikeBlock(BlockBehaviour.Properties)` by adding that legacy constructor at runtime only.
+- The Beneath `2.0.1` worldgen configured feature data that references the removed `tfc:geode` feature type.
 
 ## Target Versions
 
 - Minecraft `1.21.1`
 - NeoForge `21.1.x`
 - TerraFirmaCraft `4.2.0`
-- Beneath versions compiled against TFC APIs from before the `RockSpikeBlock(Properties, Supplier)` constructor change.
+- Beneath `2.0.1` / `Beneath-NeoForge-1.21.1-2.0.1.jar`
+
+Other Beneath versions may work if they hit the same TFC API mismatch, but this shim was created for and tested against Beneath `2.0.1`.
 
 ## Build
 
