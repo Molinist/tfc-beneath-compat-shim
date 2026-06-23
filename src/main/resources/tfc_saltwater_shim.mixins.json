@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.codex.tfcsaltwatershim.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "FluidKeyMixin",
+    "RegistryHolderMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,11 @@
+build/
+patcher/
+*.jar
+*.class
+.gradle/
+.idea/
+.vscode/
+out/
+run/
+logs/
+crash-reports/
