@@ -1,7 +1,7 @@
 param(
     [string] $MinecraftInstall = "$env:USERPROFILE\curseforge\minecraft\Install",
     [string] $InstanceDir = "$env:USERPROFILE\curseforge\minecraft\Instances\tfm default",
-    [string] $Version = "1.3.0"
+    [string] $Version = "1.4.0"
 )
 
 $ErrorActionPreference = "Stop"

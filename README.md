@@ -11,6 +11,7 @@ This mod is intentionally small and does not patch downloaded mod jars on disk. 
 - Beneath `2.0.1` for NeoForge 1.21.1, specifically the jar named `Beneath-NeoForge-1.21.1-2.0.1.jar`.
 - The Beneath `2.0.1` `NoSuchMethodError` for `RockSpikeBlock(BlockBehaviour.Properties)` by adding that legacy constructor at runtime only.
 - The Beneath `2.0.1` worldgen configured feature data that references the removed `tfc:geode` feature type.
+- TerraFirmaCraft `4.2.0` new-world creation stalls caused by the default `spawn_distance: 4000` initial spawn-biome search. The shim caps that runtime search distance at 512 blocks so world creation can finish without generating distant region data up front.
 
 ## Target Versions
 

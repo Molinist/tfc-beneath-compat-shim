@@ -5,7 +5,8 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "FluidKeyMixin",
-    "RegistryHolderMixin"
+    "RegistryHolderMixin",
+    "SettingsSpawnDistanceMixin"
   ],
   "injectors": {
     "defaultRequire": 1

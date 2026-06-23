@@ -4,10 +4,10 @@ license = "MIT"
 
 [[mods]]
 modId = "tfc_saltwater_shim"
-version = "1.3.0"
+version = "1.4.0"
 displayName = "TFC/Beneath Compatibility Shim"
 authors = "Codex"
-description = '''Compatibility shim for TerraFirmaCraft 4.2.0 addon packs. It avoids early DeferredHolder crashes and restores runtime compatibility for Beneath 2.0.1 / Beneath-NeoForge-1.21.1-2.0.1.jar without patching existing mod jars.'''
+description = '''Compatibility shim for TerraFirmaCraft 4.2.0 addon packs. It avoids early DeferredHolder crashes, restores runtime compatibility for Beneath 2.0.1 / Beneath-NeoForge-1.21.1-2.0.1.jar, and caps TFC's initial spawn search to avoid new-world creation stalls without patching existing mod jars.'''
 
 [[dependencies.tfc_saltwater_shim]]
 modId = "neoforge"
