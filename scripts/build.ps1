@@ -1,7 +1,7 @@
 param(
     [string] $MinecraftInstall = "$env:USERPROFILE\curseforge\minecraft\Install",
     [string] $InstanceDir = "$env:USERPROFILE\curseforge\minecraft\Instances\tfm default",
-    [string] $Version = "1.4.0"
+    [string] $Version = "1.5.0"
 )
 
 $ErrorActionPreference = "Stop"
@@ -26,7 +26,7 @@ $LoaderJar = FirstPath (Join-Path $MinecraftInstall "libraries\net\neoforged\fan
 $MergeToolJar = FirstPath (Join-Path $MinecraftInstall "libraries\net\neoforged\mergetool\*\mergetool-*-api.jar") "MergeTool API jar"
 $MixinJar = FirstPath (Join-Path $MinecraftInstall "libraries\org\spongepowered\mixin\*\mixin-*.jar") "Mixin jar"
 $DfuJar = FirstPath (Join-Path $MinecraftInstall "libraries\com\mojang\datafixerupper\*\datafixerupper-*.jar") "DataFixerUpper jar"
-$TfcJar = FirstPath (Join-Path $ModsDir "TerraFirmaCraft-NeoForge-1.21.1-4.2.0.jar") "TerraFirmaCraft 4.2.0 jar"
+$TfcJar = FirstPath (Join-Path $ModsDir "TerraFirmaCraft-NeoForge-1.21.1-4.2.*.jar") "TerraFirmaCraft 4.2.x jar"
 
 Remove-Item -LiteralPath $Classes -Recurse -Force -ErrorAction SilentlyContinue
 Remove-Item -LiteralPath $JarOut -Force -ErrorAction SilentlyContinue
